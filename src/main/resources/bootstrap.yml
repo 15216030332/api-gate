@@ -1,0 +1,19 @@
+#向哪个服务注册中心注册
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#服务名称
+spring:
+  application:
+    name: api-gate
+  cloud:
+    config:
+      discovery:
+        service-id: config-service
+        enabled: true
+      #profile: default
+      label: test
+
+
